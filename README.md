@@ -106,9 +106,24 @@ So, What are you waiting for?
 10. [Learn JavaScript by Building a Whack A Mole Game](https://youtu.be/lY7j-NBGFHM)
 11. [Master JavaScript Promises, Fetch API, and Async/Await](https://youtu.be/z1LJ_gWwzFs)
 
-|   |   |   |   |   |   |   |   |   |
-|---|---|---|---|---|---|---|---|---|
-|   |   |   |   |   |   |   |   |   |
-|   |   |   |   |   |   |   |   |   |
-|   |   |   |   |   |   |   |   |   |
-|   |   |   |   |   |   |   |   |   |
+|Link|Variable Type|Syntax|
+|:----|:----|:----|
+|StingManipulation| |strPdfText.Split({Environment.NewLine},StringSplitOptions.None)|
+| | |arrStrSplit.Reverse.ToArray|
+| | |(from item in arrStrSplit where Not item.Contains("Page")).ToArray|
+| | |(from item in arrStrSplit where Not String.IsNullOrWhiteSpace(item.Trim)).ToArray|
+| | |String.Join(" ", regexMatch.Cast(Of match).Select(function(d) d.ToString).ToArray)|
+| | |(from item in lstNewData where item.Contains("3059 Subtotal") or item.Contains("8155 Subtotal")).ToList|
+| | |String.Join(Environment.NewLine,lstNewData.ToArray)|
+| | |split(PDF_Data,environment.NewLine).ToList|
+| | | |
+| | |split(PDF_Data,environment.NewLine).Reverse|
+| | |split(line.ToString,"Account")(1).Replace("Batch Number","")|
+| | |String.Format("Reading email subject - [{0}]", in_TransactionItem.Subject)|
+| | | |
+| | |string.format("{0}\{1}\",Config("ReportFolder").ToString.Trim, "ExceptionScreenshots")|
+| | | |
+| | |System.Text.RegularExpressions.Regex.Replace(str_RowText,"\s+"," ",System.Text.RegularExpressions.RegexOptions.Multiline).Trim|
+| |Link|System.Text.RegularExpressions.Regex.Replace(Test_Data, "[\r?\n]{2,}", vbcrlf).Trim|
+| | |If(str_MachineName(0).Groups(1).Value IsNot Nothing, str_MachineName(0).Groups(1).Value, " ")|
+
